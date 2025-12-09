@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emotion Detector</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #141e30;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <h1>🎭 Real-Time Emotion Detector</h1>
+    <div class="video-wrapper">
+      <video id="video" autoplay muted></video>
+    </div>
+
+    <div id="emotion-display">
+      <div class="spinner" id="spinner"></div>
+      <span id="emotion-text">Detecting...</span>
+      <span id="emotion-icon"></span>
+    </div>
+
+
+    <div id="emotion-quote">Stay tuned...</div>
+
+  
+    <canvas id="emotionChart" width="400" height="150"></canvas>
+
+
+    <button id="snapshotBtn">📸 Save Snapshot</button>
+    
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
